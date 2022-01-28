@@ -188,6 +188,7 @@ class _PantallaPrincipalState extends State<PantallaPrincipal> {
     String reemplazar=caracter1;
     reemplazar=reemplazar.replaceAll('x', '*');
     reemplazar=reemplazar.replaceAll('=', "");
+    reemplazar=reemplazar.replaceAll('÷','/');
 
     Parser conv = Parser();
     Expression expression = conv.parse(reemplazar);
